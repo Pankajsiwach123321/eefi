@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eefi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class='bg-header'>
+        <div class='container position-relative z-3'>
+            <div class='d-flex fix_nav align-items-center justify-content-between py-lg-1 py-2 bg_blue'>
+                <a href="#"><img src="./assets/images/webp/page-logo.webp" alt="Pagelogo" class='max-w-68 w-100' /></a>
+                <div class='d-flex align-items-center justify-content-between gap-btn'>
+                    <a onclick="HANDLE_NAV_OPEN()" id="show-nav" href="#" class="d-lg-none position-relative z-20">
+                        <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 20V16.6667H30V20H0ZM0 11.6667V8.33333H30V11.6667H0ZM0 3.33333V0H30V3.33333H0Z"
+                                fill="white" />
+                        </svg>
+
+                    </a>
+                    <button class='btn-enter1 d-lg-none d-md-block d-none'>Enter App</button>
+                    <ul id="navbar" class="nav_bar">
+                        <li><a href="#"
+                                class='font-raleway  fw-medium text-white text-decoration-none line-hover position-relative'>About</a>
+                        </li>
+                        <li><a href="#"
+                                class='font-raleway  fw-medium text-white text-decoration-none line-hover position-relative'>IBO
+                                Event</a></li>
+                        <li><a href="#"
+                                class='font-raleway  fw-medium text-white text-decoration-none line-hover position-relative'>EEFI
+                                Tokenomics</a></li>
+                        <li><a href="#"
+                                class='font-raleway  fw-medium text-white text-decoration-none line-hover position-relative'>Team</a>
+                        </li>
+                        <li><a href="#"
+                                class='font-raleway  fw-medium text-white text-decoration-none line-hover position-relative'>Partners</a>
+                        </li>
+                        <li><a href="#"
+                                class='font-raleway  fw-medium text-white text-decoration-none line-hover position-relative'>Roadmap</a>
+                        </li>
+                        <li class='position-relative btn-more'><a href="#"
+                                class='font-raleway  fw-medium text-white text-decoration-none'>More</a>
+                            <button class="btn-am ps-2 pb-1">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.8027 6.20992C11.6712 6.06997 11.5037 6 11.3004 6C11.0972 6 10.9297 6.06997 10.7982 6.20992L8 9.18702L5.20179 6.20992C5.07025 6.06997 4.90284 6 4.69955 6C4.49626 6 4.32885 6.06997 4.19731 6.20992C4.06577 6.34987 4 6.52799 4 6.74427C4 6.96056 4.06577 7.13867 4.19731 7.27862L7.49776 10.7901C7.56951 10.8664 7.64723 10.9206 7.73094 10.9527C7.81465 10.9847 7.90433 11.0005 8 11C8.09566 11 8.18535 10.984 8.26906 10.9519C8.35277 10.9198 8.43049 10.8659 8.50224 10.7901L11.8027 7.27862C11.9342 7.13867 12 6.96056 12 6.74427C12 6.52799 11.9342 6.34987 11.8027 6.20992Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                            <div id="dropcontent" class="dropdown-box">
+                                <a href="#"
+                                    class="mb-0 font-raleway  fw-normal c-blue-300 d-flex align-items-center justify-content-center">More</a>
+                                <a href="#"
+                                    class="mb-0 font-raleway  fw-normal c-blue-300 d-flex align-items-center justify-content-center">More</a>
+                                <a href="#"
+                                    class="mb-0 font-raleway  fw-normal c-blue-300 d-flex align-items-center justify-content-center">More</a>
+                                <a href="#"
+                                    class="mb-0 font-raleway  fw-normal c-blue-300 d-flex align-items-center justify-content-center">More</a>
+                                <a href="#"
+                                    class="mb-0 font-raleway  fw-normal c-blue-300 d-flex align-items-center justify-content-center">More</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="btn-enter d-lg-block d-none position-relative z-2">Enter App</button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class='head-padding row'>
+                <div class='d-flex align-items-lg-start col-lg-6 align-items-center justify-content-center flex-column'>
+                    <h2
+                        class='mb-0 font-neueuregular fs-5xl fw-medium text-white max-w-463 text-uppercase text-center text-lg-start lh-120 pb-4'>
+                        Building
+                        elastic
+                        Protocol</h2>
+                    <p
+                        class='mb-0 font-raleway fw-normal text-white mw-521 lh-150 text-capitalize pb-3 text-lg-start text-center'>
+                        An ecosystem of unique yield strategies that help you earn yield, amplify, and stretch it across
+                        all
+                        market conditions</p>
+                    <a href='#' class='mb-0 font-raleway fs-md fw-bold text-white text-decoration-underline'>Audited by
+                        Omniscia</a>
+                </div>
+                <div class='d-flex align-items-lg-start col-lg-6 justify-content-lg-end justify-content-center'>
+                    <img src="./assets/images/webp/robotimg2.webp" alt="roboimg2"
+                        class='d-lg-none d-block robo-img w-100' />
+                    <img src="./assets/images/webp/head-robot.webp" alt="Roboimg"
+                        class='robo-img w-100 d-lg-block d-none' />
+                </div>
+            </div>
+        </div>
+        <div class='position-absolute headdot d-xl-block d-none'>
+            <Headdots />
+        </div>
+    </div>
+    <section class="bg-amplify d-flex flex-column position-relative z-1">
+        <!-- <div class="container"> -->
+        <h2 class="mt-3 mb-0 fs-4xl fw-800 font-plus-sans lh-119 text-center text-white">Amplify and Stretch Gains
+        </h2>
+        <div class="flex-grow-1 d-flex justify-content-center align-items-center">
+            <p class="fs-xs mb-0 fw-normal mt-29 text-center lh-160 text-white max-w-544 mx-auto font-raleway">We
+                take a different balanced approach to finding and creating yield opportunities in the everchanging
+                crypto market. Our
+                yield strategies help users stay protected and hedged during bear markets and amplify yield during
+                bull markets without
+                resorting to leverage or other dangerous techniques.</p>
+        </div>
+        <!-- </div> -->
+        <img class="set-bottom-cloud" src="./assets/images/webp/cloud-bottom.webp" alt="cloud-bottom">
+    </section>
+    <section class="bg-slider-blue inovation pb-128">
+        <div class="container">
+            <h2 class="mb-0 pt-163 fs-3xl fw-bold font-plus-sans lh-119 text-center text-white">Core Strategies</h2>
+            <p class="mt-4 mb-0 fs-xs fw-normal text-center lh-160 c-gray max-w-819 mx-auto font-raleway">Our initial
+                strategies use powerful burgeoning trends like Real Yield, Rebase, and others to generate
+                cutting-edged
+                yield innovations. These yield strategies stretch beyond the drought in stable coins and set the value
+                for
+                our native
+                protocol token $EEFI. Check them out!'</p>
+            <div class="inovation-slider mt-29">
+                <div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="position-relative z-1 max-w-355 mx-auto">
+                                <div class="card-slider-core position-relative z-1">
+                                    <span
+                                        class="inovation-label fw-normal font-raleway lh-160 text-white">Innovation</span>
+                                    <img src="./assets/images/svg/a-inovation.svg" alt="inovation" class="my-2">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="font-raleway fw-normal lh-155 c-gray-100">Projected Yield (APY)</p>
+                                        <p class="font-inter c-blue-100 lh-155 fw-bold">7,777,777%</p>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="font-raleway fw-normal lh-155 c-gray-900 mb-0">Current Deposits</p>
+                                        <p class="font-inter text-white lh-155 fw-medium mb-0">0.00 AMPL</p>
+                                    </div>
+                                    <div class="w-100 line-total"></div>
+                                    <div class="d-flex align-items-center mt-3 justify-content-between">
+                                        <p class="font-raleway fw-normal lh-155 c-gray-900 mb-0">Max Capacity</p>
+                                        <p class="font-inter text-white lh-155 fw-medium mb-0">0.00 AMPL</p>
+                                    </div>
+                                    <div class="layer"></div>
+                                </div>
+                                <p class="bold-text-bg-card font-raleway fw-bold text-white">$AMPL</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6  mt-5 mt-lg-0my-auto">
+                            <div class='h-300'>
+                                <h2
+                                    class='mb-0 font-neueregular fs-2xl fw-normal lh-119 text-capitalize text-white pb-3'>
+                                    Elastic Vault</h2>
+                                <p class='mb-0 font-raleway fs-lg fw-medium lh-160 text-white'>Deposit Token
+                                    <span><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M10.21 6.51183C10.35 6.37795 10.518 6.29614 10.7 6.29614C10.889 6.29614 11.05 6.37795 11.197 6.51183C11.33 6.66802 11.4 6.84652 11.4 7.03989C11.4 7.24071 11.33 7.41177 11.197 7.56796C11.05 7.70927 10.889 7.78364 10.7 7.78364C10.518 7.78364 10.35 7.70927 10.21 7.56796C10.077 7.41177 10 7.24071 10 7.03989C10 6.84652 10.077 6.66802 10.21 6.51183ZM8.46 9.99258C8.46 9.99258 9.979 8.71333 10.532 8.66127C11.05 8.61664 10.945 9.24883 10.896 9.57608L10.889 9.62071C10.791 10.0149 10.672 10.4909 10.553 10.9446C10.287 11.9784 10.028 12.9899 10.091 13.1758C10.161 13.4287 10.595 13.1089 10.91 12.8858C10.952 12.856 10.987 12.8263 11.022 12.804C11.022 12.804 11.078 12.7445 11.134 12.8263C11.148 12.8486 11.162 12.8709 11.176 12.8858C11.239 12.9899 11.274 13.0271 11.19 13.0866L11.162 13.1015C11.008 13.213 10.35 13.7039 10.084 13.8824C9.797 14.0832 8.698 14.7526 8.866 13.451C9.013 12.5362 9.209 11.7478 9.363 11.1305C9.65 10.0149 9.776 9.50914 9.132 9.94795C8.873 10.1116 8.719 10.2157 8.628 10.2826C8.551 10.3421 8.544 10.3421 8.495 10.2455L8.474 10.2008L8.439 10.1413C8.39 10.067 8.39 10.0595 8.46 9.99258ZM17 10.0149C17 14.1055 13.85 17.4524 10 17.4524C6.15 17.4524 3 14.1055 3 10.0149C3 5.92427 6.15 2.57739 10 2.57739C13.85 2.57739 17 5.92427 17 10.0149ZM16.3 10.0149C16.3 6.29614 13.7924 3.32114 10 3.32114C6.20761 3.32114 3.7 6.14739 3.7 10.0149C3.7 13.8824 6.62795 16.7086 10 16.7086C13.5777 16.7086 16.3 13.7336 16.3 10.0149Z"
+                                                fill="white" />
+                                        </svg>
+                                    </span>
+                                </p>
+                                <p class='mb-0 font-raleway fw-normal lh-160 c-gray pt-2'>$AMPL</p>
+                                <p class='mb-0 font-raleway fs-lg fw-medium lh-160 text-white pt-2 pb-2'>Flagship
+                                    Hedging
+                                    Strategy</p>
+                                <p class='mb-0 font-raleway fw-normal lh-160 c-gray mw-422 pb-2'>This
+                                    one-of-a-kind strategy
+                                    combines the benefits of Rebase’s force multiplier effect and Real Yield’s
+                                    sustainability.</p>
+                                <p class='mb-0 font-raleway fw-normal lh-160 c-gray mw-422 pb-2'>Helps users to
+                                    protect against
+                                    downtrends and amplify yield rewards during market up trends.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="position-relative z-1 max-w-355 mx-auto">
+                                <div class="card-slider-core position-relative z-1">
+                                    <span
+                                        class="inovation-label fw-normal font-raleway lh-160 text-white">Innovation</span>
+                                    <img src="./assets/images/svg/pi-inovation.svg" alt="inovation" class="my-2">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="font-raleway fw-normal lh-155 c-gray-100">Projected Yield (APY)</p>
+                                        <p class="font-inter c-blue-100 lh-155 fw-bold">7,777,777%</p>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="font-raleway fw-normal lh-155 c-gray-900 mb-0">Current Deposits</p>
+                                        <p class="font-inter text-white lh-155 fw-medium mb-0">0.00 AMPL</p>
+                                    </div>
+                                    <div class="w-100 line-total"></div>
+                                    <div class="d-flex align-items-center mt-3 justify-content-between">
+                                        <p class="font-raleway fw-normal lh-155 c-gray-900 mb-0">Max Capacity</p>
+                                        <p class="font-inter text-white lh-155 fw-medium mb-0">0.00 AMPL</p>
+                                    </div>
+                                    <div class="layer"></div>
+                                </div>
+                                <p class="bold-text-bg-card font-raleway fw-bold text-white">$AMPL</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-5 mt-lg-0 my-auto">
+                            <div class='h-300'>
+                                <h2
+                                    class='mb-0 font-neueregular fs-2xl fw-normal lh-119 text-capitalize text-white pb-3'>
+                                    Olympus Bond Rewards Vault</h2>
+                                <ul class="list-unstyled">
+                                    <div>
+                                        <li class='mb-0 font-raleway fw-normal lh-160 c-gray mw-422 pb-2'> 1. <span
+                                                class="fw-semibold text-white">Yield Received</span> $OHM</li>
+
+                                        <li
+                                            class='mb-0 font-raleway fw-normal lh-160 c-gray mw-422 pb-2 d-flex align-items-sm-start gap-1'>
+                                            <span>
+                                                3.</span>These vault strategies will enable users to participate in
+                                            Olympus’ bond markets on Bond Protocol and automatically earn
+                                            $OHM rewards in addition to other tokens.
+                                        </li>
+                                        <li
+                                            class='mb-0 font-raleway fw-normal lh-160 c-gray mw-422 pb-2 d-flex align-items-sm-start gap-1'>
+                                            <span>
+                                                3.</span> Bond Protocol markets for other token bonds will be enabled
+                                            over time.
+                                        </li>
+                                    </div>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="position-relative z-1 max-w-355 mx-auto">
+                                <div class="card-slider-core position-relative z-1">
+                                    <span
+                                        class="inovation-label fw-normal font-raleway lh-160 text-white">Innovation</span>
+                                    <img src="./assets/images/svg/pi-inovation.svg" alt="inovation" class="my-2">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="font-raleway fw-normal lh-155 c-gray-100">Projected Yield (APY)</p>
+                                        <p class="font-inter c-blue-100 lh-155 fw-bold">7,777,777%</p>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="font-raleway fw-normal lh-155 c-gray-900 mb-0">Current Deposits</p>
+                                        <p class="font-inter text-white lh-155 fw-medium mb-0">0.00 AMPL</p>
+                                    </div>
+                                    <div class="w-100 line-total"></div>
+                                    <div class="d-flex align-items-center mt-3 justify-content-between">
+                                        <p class="font-raleway fw-normal lh-155 c-gray-900 mb-0">Max Capacity</p>
+                                        <p class="font-inter text-white lh-155 fw-medium mb-0">0.00 AMPL</p>
+                                    </div>
+                                    <div class="layer"></div>
+                                </div>
+                                <p class="bold-text-bg-card font-raleway fw-bold text-white">$AMPL</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-5 mt-lg-0 my-auto">
+                            <div class='h-300'>
+                                <h2
+                                    class='mb-0 font-neueregular fs-2xl fw-normal lh-119 text-capitalize text-white pb-3'>
+                                    Olympus Bond Rewards Vault</h2>
+                                <ul class="list-unstyled">
+                                    <div>
+                                        <li class='mb-0 font-raleway fw-normal lh-160 c-gray mw-422 pb-2'> 1. <span
+                                                class="fw-semibold text-white">Deposit
+                                                Token:</span> $OHM</li>
+                                        <li class='mb-0 font-raleway fw-normal lh-160 c-gray mw-422 pb-2'> 2. <span
+                                                class="fw-semibold text-white">Yield Received:</span> $OHM, $DAI</li>
+                                        <li
+                                            class='mb-0 font-raleway fw-normal lh-160 c-gray mw-422 pb-2 d-flex align-items-sm-start gap-1'>
+                                            <span>
+                                                3.</span> This
+                                            strategy gives depositors a chance to participate in Olympus’s growing Real
+                                            Yield econOHMy. Similar to Forex market
+                                            trading this vault will automatically participate in Ranged-Bound Stability
+                                            (RBS), an automated, decentralized mechanism
+                                            that helps $OHM to maintain its stability. Users can stake $OHM in exchange
+                                            for $OHM or $DAI rewards 
+                                        </li>
+                                    </div>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class='bg-token'>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class='mont-neueubold fw-bold fs-3xl text-black lh-119 text-capitalize mb-1 mb-sm-2 mb-lg-3'>
+                        EEFI
+                        Tokenomics
+                    </h2>
+                    <p class='mb-0 font-raleway fw-normal text-black lh-160 max-w-448 pb-4'>EEFI is the special
+                        rewards
+                        token of the protocol that is minted and distributed in a decentralized fashion. It produces
+                        amplified
+                        yield during uptrends and protects from downside action during downtrends.</p>
+                    <button class='btn-view mb-2 mb-sm-3 mb-md-4 mb-lg-5 font-raleway fw-medium text-white'>View
+                        Contract
+                        Address</button>
+                    <p class='mb-0 font-neueubold fs-xl fw-bold text-black text-capitalize lh-119 pb-3'>IBO TOKENOMICS
+                    </p>
+                    <p class='mb-0 font-raleway fs-md fw-bold text-black lh-130 pb-2'>IBO Round 1 Price</p>
+                    <p class='mb-0 font-raleway fw-semibold c-blue-300 lh-130 pb-3'>1 EEFI = $12</p>
+                    <p class='mb-0 font-raleway fs-md fw-bold text-black lh-130 pb-2'>IBO Round 2 Price</p>
+                    <p class='mb-0 font-raleway fw-semibold c-blue-300 lh-130 pb-3'>1 EEFI = $18</p>
+                    <p class='mb-0 font-raleway fs-md fw-bold text-black lh-130 pb-2'>IBO Round 3 Price</p>
+                    <p class='mb-0 font-raleway fw-semibold c-blue-300 lh-130 pb-3'>1 EEFI = $26</p>
+                    <p class='mb-0 font-raleway fs-md fw-bold text-black lh-130 pb-2'>TOTAL SUPPLY</p>
+                    <p class='mb-0 font-raleway fw-semibold text-black lh-130'>170,000</p>
+                </div>
+                <div class='pt-lg-0 col-lg-6 pt-100'>
+                    <div class="max-w-511 mx-lg-auto">
+                        <div class='d-flex align-items-start gap-lg-20 gap-12 pb-4'>
+                            <div class='cur_pointer icon_hov'>
+                                <span><img class="custom-icon-token" src="./assets/images/svg/yield.svg"
+                                        alt="yield"></span>
+                            </div>
+                            <div>
+                                <p
+                                    class='font-neueubold fs-xl fw-bold text-white lh-119 text-capitalize mb-1 mb-sm-2 mb-lg-3'>
+                                    Decentralized
+                                    Yield</p>
+                                <p class='mb-0 font-raleway fw-normal text-white op_08 lh-183'>Protocol’s native
+                                    utility |
+                                    rewards token</p>
+                            </div>
+                        </div>
+                        <div class='d-flex align-items-start gap-lg-20 gap-12 pb-4'>
+                            <span><img class="custom-icon-token" src="./assets/images/svg/extra.svg" alt="extra"></span>
+                            <div>
+                                <p
+                                    class='font-neueubold fs-xl fw-bold text-white lh-119 text-capitalize mb-1 mb-sm-2 mb-lg-3'>
+                                    Extra
+                                    Value
+                                </p>
+                                <p class='mb-0 font-raleway fw-normal text-white op_08 lh-183'>Protocol’s native
+                                    utility |
+                                    rewards token</p>
+                            </div>
+                        </div>
+                        <div class='d-flex align-items-start gap-lg-20 gap-12 pb-4'>
+                            <span><img class="custom-icon-token" src="./assets/images/svg/smart.svg" alt="smart"></span>
+                            <div>
+                                <p
+                                    class='font-neueubold fs-xl fw-bold text-white lh-119 text-capitalize mb-1 mb-sm-2 mb-lg-3'>
+                                    Smart
+                                    Index
+                                </p>
+                                <p class='mb-0 font-raleway fw-normal text-white op_08 lh-183 mw-415'>Token can be
+                                    viewed
+                                    as an index of all strategy performance on the protocol</p>
+                            </div>
+                        </div>
+                        <div class='d-flex align-items-start gap-lg-20 gap-12 pb-4'>
+                            <span><img class="custom-icon-token" src="./assets/images/svg/social.svg"
+                                    alt="social"></span>
+                            <div>
+                                <p
+                                    class='font-neueubold fs-xl fw-bold text-white lh-119 text-capitalize mb-1 mb-sm-2 mb-lg-3'>
+                                    Social
+                                    Coordination (E,E)</p>
+                                <p class='mb-0 font-raleway fw-normal text-white op_08 lh-183 mw-415'>Promotes hyper
+                                    social
+                                    coordination around all strategies on the protocol (E,E) (makes hedging fun and
+                                    working
+                                    together
+                                    produces more benefits to all vault users)</p>
+                            </div>
+                        </div>
+                        <div class='d-flex align-items-start gap-lg-20 gap-12 pb-4'>
+                            <span><img class="custom-icon-token" src="./assets/images/svg/expensive.svg" width="80"
+                                    height="81" alt="expensive"></span>
+                            <div>
+                                <p
+                                    class='font-neueubold fs-xl fw-bold text-white lh-119 text-capitalize mb-1 mb-sm-2 mb-lg-3'>
+                                    Expansive
+                                    Utility Dimensions</p>
+                                <p class='mb-0 font-raleway fw-normal text-white op_08 lh-183 mw-391'>EEFI’s utility
+                                    will
+                                    expand as more strategies are added to the protocol.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/app.js"></script>
+    <script>
+        $('.inovation-slider').slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade: true,
+            arrows: false,
+            autoplay: true,
+            autoplaySpeed: 7000,
+            speed: 500,
+            infinite: true,
+            cssEase: 'ease-in-out',
+        });
+    </script>
+</body>
+
+</html>
