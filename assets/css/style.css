@@ -16,6 +16,10 @@
     src: url('../fonts/neue-machina/NeueMachina-Ultrabold.otf');
 }
 
+.container {
+    padding: 0 25px !important;
+}
+
 .font-neuelight {
     font-family: 'neuemachinalight';
 }
@@ -172,14 +176,15 @@
 
 .bg-amplify {
     background-image: url(../images/webp/two-bull.webp);
-    background-size: 100% 100%;
+    background-size: 100% 34%;
     background-repeat: no-repeat;
-    min-height: 833px;
+    background-position: 0 32%;
+    min-height: 381px;
 }
 
 .bg-slider-blue {
     background-image: url(../images/webp/slider-bg.webp);
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -283,8 +288,9 @@
 
 .set-bottom-cloud {
     position: absolute;
-    bottom: -84px;
+    bottom: -23px;
     left: 0%;
+    z-index: -1;
     pointer-events: none;
     width: 100%;
 }
@@ -330,6 +336,10 @@
     flex-direction: column;
     left: -25px;
     top: 35px;
+}
+
+.max-w-544 {
+    max-width: 544px;
 }
 
 .head-padding {
@@ -392,8 +402,22 @@
         gap: 20px;
     }
 
+    .bg-amplify {
+        background-size: 100% 98%;
+        background-position: bottom;
+        height: 456px;
+    }
+
     .head-padding {
         padding-top: 232px;
+    }
+
+    .set-bottom-cloud {
+        position: absolute;
+        bottom: -45px;
+        left: 0%;
+        pointer-events: none;
+        width: 100%;
     }
 
     :root {
@@ -428,12 +452,24 @@
         --fs-6xl: 132px;
     }
 
+    .set-bottom-cloud {
+        position: absolute;
+        bottom: -84px;
+        left: 0%;
+        pointer-events: none;
+        width: 100%;
+    }
+
     .bg-token {
         background-image: url("../images/webp/bg-twocolor.webp");
         background-size: 100% 110%;
         /* min-height: 100vh; */
         padding-top: 160px;
         padding-bottom: 200px;
+    }
+
+    .bg-slider-blue {
+        background-size: 100% 100%;
     }
 
     .robo-img {
@@ -444,6 +480,11 @@
 
     .head-padding {
         padding-top: 0;
+    }
+
+    .bg-amplify {
+        background-size: 100% 100%;
+        min-height: 833px;
     }
 
     .custom-icon-token {
@@ -457,10 +498,6 @@
 
     .gap-btn {
         gap: 30px;
-    }
-
-    .max-w-544 {
-        max-width: 544px;
     }
 
     .bg-header {
@@ -606,7 +643,7 @@
 
 @media (min-width:1300px) and (max-width:1600px) {
     .container {
-        max-width: 1140px !important;
+        max-width: 1190px !important;
     }
 }
 
@@ -614,5 +651,4 @@
     .gap-btn {
         gap: 117px;
     }
-
 }
