@@ -407,7 +407,7 @@
     border: 1px solid #E8E8E8;
     flex-direction: column;
     left: -25px;
-    top: 35px;
+    top: 28px;
 }
 
 .max-w-544 {
@@ -560,10 +560,6 @@
         max-width: max-content !important;
     }
 
-    .p-0 {
-        padding: 0 !important;
-    }
-
     .px-22 {
         padding-left: 22px;
         padding-right: 22px;
@@ -571,6 +567,10 @@
 
     .container {
         padding: 0 22px !important;
+    }
+
+    .p-0 {
+        padding: 0 !important;
     }
 }
 
