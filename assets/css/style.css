@@ -44,7 +44,7 @@
     font-family: "Inter", sans-serif;
 }
 
-.font-plus-sans {
+.font-plus-jakarta {
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
@@ -379,7 +379,7 @@
     background: #3916C3;
 }
 
-.mw-422 {
+.max-w-422 {
     max-width: 422px;
 }
 
@@ -650,7 +650,7 @@
         padding: 0 22px !important;
     }
 
-    .p-0 {
+    .p_0 {
         padding: 0 !important;
     }
 }
@@ -680,12 +680,6 @@
         --fs-4xl: 40px;
         --fs-5xl: 72px;
         --fs-6xl: 132px;
-        /*  */
-        --c-gray: #CFD5E6;
-        --c-gray-100: #CED5E3;
-        --c-gray-900: #8496B5;
-        --c-blue-100: #4878FF;
-        --c-blue-300: #1643C3;
     }
 
     .robo-img {
