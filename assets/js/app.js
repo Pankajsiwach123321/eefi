@@ -18,3 +18,16 @@ function HANDLE_NAV_OPEN() {
         LINE3.classList.toggle("activeline-3"),
         document.documentElement.classList.toggle("overflow-hidden");
 }
+// back to top 
+function backtop() {
+    window.scrollTo(0, 0);
+}
+window.addEventListener("scroll", function () {
+    const mybackto = document.getElementById("back-to-top");
+    if (window.scrollY > 500) {
+        mybackto.style.display = "block";
+    }
+    else {
+        mybackto.style.display = "none";
+    }
+});

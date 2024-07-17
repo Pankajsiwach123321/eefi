@@ -35,17 +35,21 @@
     <meta property="twitter:description"
         content="We take a different balanced approach to finding and creating yield opportunities in the everchanging crypto market. Our yield strategies help users stay protected and hedged during bear markets and amplify yield during bull markets without resorting to leverage or other dangerous techniques." />
     <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
-
-    <!-- Meta Tags Generated with https://metatags.io -->
 </head>
 
 <body>
-    <header class='bg-header'>
+    <!-- back-to-top -->
+    <button aria-label="back to top" onclick="backtop()" id="back-to-top"
+        class="back-to-top">
+        <img src="./assets/images/svg/back-to-top.svg" alt="back to top arrow">
+    </button>
+    <header class='bg-header max-w-1920 mx-auto'>
         <div class='container position-relative z-3'>
             <div class='d-flex fix_nav align-items-center justify-content-between py-lg-1 py-2'>
-                <a href="#"><img src="./assets/images/webp/page-logo.webp" alt="Pagelogo" class='max-w-68 w-100' /></a>
+                <a aria-label="nav logo" href="#"><img src="./assets/images/webp/page-logo.webp" alt="Pagelogo"
+                        class='max-w-68 w-100' /></a>
                 <div class='d-flex align-items-center justify-content-between gap-btn'>
-                    <a onclick="HANDLE_NAV_OPEN()" id="show-nav" href="#"
+                    <a aria-label="nav toggle" onclick="HANDLE_NAV_OPEN()" id="show-nav" href="#"
                         class="d-lg-none d-flex gap_5 flex-column position-relative z-20">
                         <span class="line-toggle line-1 "></span>
                         <span class="line-toggle line-2"></span>
@@ -53,22 +57,22 @@
                     </a>
                     <button class='btn-enter-md d-lg-none d-md-block d-none'>Enter App</button>
                     <ul id="navbar" class="nav-bar">
-                        <li><a href="#" onclick="HANDLE_HIDE_NAV()"
+                        <li><a aria-label="about" href="#" onclick="HANDLE_HIDE_NAV()"
                                 class='font-raleway fw-medium text-white text-decoration-none line-hover position-relative'>About</a>
                         </li>
-                        <li><a href="#" onclick="HANDLE_HIDE_NAV()"
+                        <li><a aria-label="ibo event" href="#" onclick="HANDLE_HIDE_NAV()"
                                 class='font-raleway fw-medium text-white text-decoration-none line-hover position-relative'>IBO
                                 Event</a></li>
-                        <li><a href="#" onclick="HANDLE_HIDE_NAV()"
+                        <li><a aria-label="eefi tokenomics" href="#" onclick="HANDLE_HIDE_NAV()"
                                 class='font-raleway fw-medium text-white text-decoration-none line-hover position-relative'>EEFI
                                 Tokenomics</a></li>
-                        <li><a href="#" onclick="HANDLE_HIDE_NAV()"
+                        <li><a aria-label="team" href="#" onclick="HANDLE_HIDE_NAV()"
                                 class='font-raleway fw-medium text-white text-decoration-none line-hover position-relative'>Team</a>
                         </li>
-                        <li><a href="#" onclick="HANDLE_HIDE_NAV()"
+                        <li><a aria-label="partners" href="#" onclick="HANDLE_HIDE_NAV()"
                                 class='font-raleway fw-medium text-white text-decoration-none line-hover position-relative'>Partners</a>
                         </li>
-                        <li><a href="#" onclick="HANDLE_HIDE_NAV()"
+                        <li><a aria-label="roadmap" href="#" onclick="HANDLE_HIDE_NAV()"
                                 class='font-raleway fw-medium text-white text-decoration-none line-hover position-relative'>Roadmap</a>
                         </li>
                         <li class='position-relative btn-more'><a href="#"
@@ -82,20 +86,20 @@
                                 </svg>
                             </button>
                             <div id="dropcontent" class="dropdown-box">
-                                <a href="#" onclick="HANDLE_HIDE_NAV()"
+                                <a aria-label="more one" href="#" onclick="HANDLE_HIDE_NAV()"
                                     class="mb-0 font-raleway fw-normal c-blue-300 d-flex align-items-center justify-content-center text-decoration-none">More</a>
-                                <a href="#" onclick="HANDLE_HIDE_NAV()"
+                                <a aria-label="more two" href="#" onclick="HANDLE_HIDE_NAV()"
                                     class="mb-0 font-raleway fw-normal c-blue-300 d-flex align-items-center justify-content-center text-decoration-none">More</a>
-                                <a href="#" onclick="HANDLE_HIDE_NAV()"
+                                <a aria-label="more three" href="#" onclick="HANDLE_HIDE_NAV()"
                                     class="mb-0 font-raleway fw-normal c-blue-300 d-flex align-items-center justify-content-center text-decoration-none">More</a>
-                                <a href="#" onclick="HANDLE_HIDE_NAV()"
+                                <a aria-label="more four" href="#" onclick="HANDLE_HIDE_NAV()"
                                     class="mb-0 font-raleway fw-normal c-blue-300 d-flex align-items-center justify-content-center text-decoration-none">More</a>
-                                <a href="#" onclick="HANDLE_HIDE_NAV()"
+                                <a aria-label="more five" href="#" onclick="HANDLE_HIDE_NAV()"
                                     class="mb-0 font-raleway fw-normal c-blue-300 d-flex align-items-center justify-content-center text-decoration-none">More</a>
                             </div>
                         </li>
                         <li>
-                            <a href="#"
+                            <a aria-label="enter app" href="#"
                                 class="btn-enter text-decoration-none text-white border-white d-md-none position-relative z-2">Enter
                                 App</a>
                         </li>
@@ -115,7 +119,7 @@
                         An ecosystem of unique yield strategies that help you earn yield, amplify, and stretch it across
                         all
                         market conditions</p>
-                    <a href='#'
+                    <a aria-label="audited by Omniscia" href='#'
                         class='mb-0 font-raleway fs-md fw-bold text-white position-relative z-1 text-decoration-none text-decoration-underline-after'>Audited
                         by
                         Omniscia</a>
@@ -148,7 +152,8 @@
             </svg>
         </div>
     </header>
-    <section class="bg-amplify bg-black d-flex flex-column position-relative z-1">
+    <!-- amplify bull -->
+    <section class="bg-amplify bg-black d-flex flex-column position-relative z-1 max-w-1920 mx-auto">
         <div class="container flex-grow-1 d-flex flex-column w-100">
             <h2 class="mt-3 mb-0 fs-4xl fw-md-800 fw-semibold font-plus-sans lh-119 text-center text-white">Amplify and
                 STRETCH GAINS
@@ -164,7 +169,8 @@
         </div>
         <img class="set-bottom-cloud" src="./assets/images/webp/cloud-bottom.webp" alt="cloud-bottom">
     </section>
-    <section class="bg-slider-blue inovation pb-60 pb-lg-80">
+    <!-- core strategies slider -->
+    <section class="bg-slider-blue inovation pb-60 pb-lg-80 max-w-1920 mx-auto">
         <div class="container max-w-max p-0">
             <h2 class="mb-0 px-22 pt-md-163 pt-80 fs-3xl fw-bold font-neueubold lh-119 text-center text-white">Core
                 Strategies</h2>
@@ -193,13 +199,10 @@
                                         <p class="font-raleway fw-normal lh-155 c-gray-900 mb-0">Current Deposits</p>
                                         <p class="font-inter text-white lh-155 fw-medium mb-0">0.00 AMPL</p>
                                     </div>
-                                    <div class="w-100 line-total"></div>
-                                    <div class="d-flex align-items-center mt-3 justify-content-between">
+                                    <div class="d-flex align-items-center justify-content-between line-total">
                                         <p class="font-raleway fw-normal lh-155 c-gray-900 mb-0">Max Capacity</p>
                                         <p class="font-inter text-white lh-155 fw-medium mb-0">0.00 AMPL</p>
                                     </div>
-                                    <div class="layer"></div>
-                                    <div class="layer-blue"></div>
                                 </div>
                                 <p class="bold-text-bg-card font-raleway fw-bold text-white">$AMPL</p>
                             </div>
@@ -249,13 +252,10 @@
                                         <p class="font-raleway fw-normal lh-155 c-gray-900 mb-0">Current Deposits</p>
                                         <p class="font-inter text-white lh-155 fw-medium mb-0">0.00 AMPL</p>
                                     </div>
-                                    <div class="w-100 line-total"></div>
-                                    <div class="d-flex align-items-center mt-3 justify-content-between">
+                                    <div class="d-flex align-items-center justify-content-between line-total">
                                         <p class="font-raleway fw-normal lh-155 c-gray-900 mb-0">Max Capacity</p>
                                         <p class="font-inter text-white lh-155 fw-medium mb-0">0.00 AMPL</p>
                                     </div>
-                                    <div class="layer"></div>
-                                    <div class="layer-blue"></div>
                                 </div>
                                 <p class="bold-text-bg-card font-raleway fw-bold text-white">$AMPL</p>
                             </div>
@@ -304,13 +304,10 @@
                                         <p class="font-raleway fw-normal lh-155 c-gray-900 mb-0">Current Deposits</p>
                                         <p class="font-inter text-white lh-155 fw-medium mb-0">0.00 AMPL</p>
                                     </div>
-                                    <div class="w-100 line-total"></div>
-                                    <div class="d-flex align-items-center mt-3 justify-content-between">
+                                    <div class="d-flex align-items-center justify-content-between line-total">
                                         <p class="font-raleway fw-normal lh-155 c-gray-900 mb-0">Max Capacity</p>
                                         <p class="font-inter text-white lh-155 fw-medium mb-0">0.00 AMPL</p>
                                     </div>
-                                    <div class="layer"></div>
-                                    <div class="layer-blue"></div>
                                 </div>
                                 <p class="bold-text-bg-card font-raleway fw-bold text-white">$AMPL</p>
                             </div>
@@ -345,7 +342,8 @@
             </div>
         </div>
     </section>
-    <div class='bg-token'>
+    <!-- eefi Tokenomics -->
+    <section class='bg-token max-w-1920 mx-auto'>
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -432,7 +430,7 @@
                                     produces more benefits to all vault users)</p>
                             </div>
                         </div>
-                        <div class='d-flex align-items-xl-center align-items-start gap-20 pb-4'>
+                        <div class='d-flex  align-items-start gap-20 pb-4'>
                             <span><img class="custom-icon-token" src="./assets/images/svg/expensive.svg" width="80"
                                     height="81" alt="expensive"></span>
                             <div>
@@ -449,7 +447,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
