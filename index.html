@@ -39,15 +39,14 @@
 
 <body>
     <!-- back-to-top -->
-    <button aria-label="back to top" onclick="backtop()" id="back-to-top"
-        class="back-to-top">
+    <button aria-label="back to top" onclick="backtop()" id="back-to-top" class="back-to-top">
         <img src="./assets/images/svg/back-to-top.svg" alt="back to top arrow">
     </button>
     <header class='bg-header max-w-1920 mx-auto'>
         <div class='container position-relative z-3'>
             <div class='d-flex fix_nav align-items-center justify-content-between py-lg-1 py-2'>
                 <a aria-label="nav logo" href="#"><img src="./assets/images/webp/page-logo.webp" alt="Pagelogo"
-                        class='max-w-68 w-100' /></a>
+                        class='max-w-lg-68 max-w-51 w-100' /></a>
                 <div class='d-flex align-items-center justify-content-between gap-btn'>
                     <a aria-label="nav toggle" onclick="HANDLE_NAV_OPEN()" id="show-nav" href="#"
                         class="d-lg-none d-flex gap_5 flex-column position-relative z-20">
@@ -55,7 +54,7 @@
                         <span class="line-toggle line-2"></span>
                         <span class="line-toggle line-3 "></span>
                     </a>
-                    <button class='btn-enter-md d-lg-none d-md-block d-none'>Enter App</button>
+                    <button class='btn_enter-md d-lg-none d-md-block d-none'>Enter App</button>
                     <ul id="navbar" class="nav-bar">
                         <li><a aria-label="about" href="#" onclick="HANDLE_HIDE_NAV()"
                                 class='font-raleway fw-medium text-white text-decoration-none line-hover position-relative'>About</a>
@@ -75,10 +74,10 @@
                         <li><a aria-label="roadmap" href="#" onclick="HANDLE_HIDE_NAV()"
                                 class='font-raleway fw-medium text-white text-decoration-none line-hover position-relative'>Roadmap</a>
                         </li>
-                        <li class='position-relative btn-more'><a href="#"
+                        <li class='position-relative btn_more'><a href="#"
                                 class='font-raleway fw-medium text-white text-decoration-none'>More</a>
-                            <button class="btn-arrow ps-2 pb-1">
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                            <button class="btn_arrow ps-2 pb-1">
+                                <svg class="arrow-drop-down" width="16" height="15" viewBox="0 0 16 15" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M11.8027 6.20992C11.6712 6.06997 11.5037 6 11.3004 6C11.0972 6 10.9297 6.06997 10.7982 6.20992L8 9.18702L5.20179 6.20992C5.07025 6.06997 4.90284 6 4.69955 6C4.49626 6 4.32885 6.06997 4.19731 6.20992C4.06577 6.34987 4 6.52799 4 6.74427C4 6.96056 4.06577 7.13867 4.19731 7.27862L7.49776 10.7901C7.56951 10.8664 7.64723 10.9206 7.73094 10.9527C7.81465 10.9847 7.90433 11.0005 8 11C8.09566 11 8.18535 10.984 8.26906 10.9519C8.35277 10.9198 8.43049 10.8659 8.50224 10.7901L11.8027 7.27862C11.9342 7.13867 12 6.96056 12 6.74427C12 6.52799 11.9342 6.34987 11.8027 6.20992Z"
@@ -87,27 +86,27 @@
                             </button>
                             <div id="dropcontent" class="dropdown-box">
                                 <a aria-label="more one" href="#" onclick="HANDLE_HIDE_NAV()"
-                                    class="mb-0 font-raleway fw-normal c-blue-300 d-flex align-items-center justify-content-center text-decoration-none">More</a>
+                                    class="mb-0 font-raleway fw-normal color-blue-300 d-flex align-items-center justify-content-center text-decoration-none">More</a>
                                 <a aria-label="more two" href="#" onclick="HANDLE_HIDE_NAV()"
-                                    class="mb-0 font-raleway fw-normal c-blue-300 d-flex align-items-center justify-content-center text-decoration-none">More</a>
+                                    class="mb-0 font-raleway fw-normal color-blue-300 d-flex align-items-center justify-content-center text-decoration-none">More</a>
                                 <a aria-label="more three" href="#" onclick="HANDLE_HIDE_NAV()"
-                                    class="mb-0 font-raleway fw-normal c-blue-300 d-flex align-items-center justify-content-center text-decoration-none">More</a>
+                                    class="mb-0 font-raleway fw-normal color-blue-300 d-flex align-items-center justify-content-center text-decoration-none">More</a>
                                 <a aria-label="more four" href="#" onclick="HANDLE_HIDE_NAV()"
-                                    class="mb-0 font-raleway fw-normal c-blue-300 d-flex align-items-center justify-content-center text-decoration-none">More</a>
+                                    class="mb-0 font-raleway fw-normal color-blue-300 d-flex align-items-center justify-content-center text-decoration-none">More</a>
                                 <a aria-label="more five" href="#" onclick="HANDLE_HIDE_NAV()"
-                                    class="mb-0 font-raleway fw-normal c-blue-300 d-flex align-items-center justify-content-center text-decoration-none">More</a>
+                                    class="mb-0 font-raleway fw-normal color-blue-300 d-flex align-items-center justify-content-center text-decoration-none">More</a>
                             </div>
                         </li>
                         <li>
                             <a aria-label="enter app" href="#"
-                                class="btn-enter text-decoration-none text-white border-white d-md-none position-relative z-2">Enter
+                                class="btn_enter text-decoration-none text-white border-white d-md-none position-relative z-2">Enter
                                 App</a>
                         </li>
                     </ul>
-                    <button class="btn-enter d-lg-block d-none position-relative z-2">Enter App</button>
+                    <button class="btn_enter d-lg-block d-none position-relative z-2">Enter App</button>
                 </div>
             </div>
-            <div class='head-padding row'>
+            <div class='hero-padding row'>
                 <div class='d-flex pt-lg-162 align-items-lg-start col-lg-6 align-items-center flex-column'>
                     <h2
                         class='mb-0 font-neueregular fs-5xl fw-medium text-white max-w-lg-463 text-uppercase text-center text-lg-start lh-112 pb-2 pb-lg-4'>
@@ -155,7 +154,8 @@
     <!-- amplify bull -->
     <section class="bg-amplify bg-black d-flex flex-column position-relative z-1 max-w-1920 mx-auto">
         <div class="container flex-grow-1 d-flex flex-column w-100">
-            <h2 class="mt-3 mb-0 fs-4xl fw-md-800 fw-semibold font-plus-jakarta lh-119 text-center text-white">Amplify and
+            <h2 class="mt-lg-3 mt-2 mb-0 fs-4xl fw-md-800 fw-semibold font-plus-jakarta lh-119 text-center text-white">
+                Amplify and
                 STRETCH GAINS
             </h2>
             <div class="flex-grow-1 d-flex justify-content-center align-items-md-center pb-5 pb-md-0 align-items-end">
@@ -172,9 +172,12 @@
     <!-- core strategies slider -->
     <section class="bg-slider-blue inovation pb-60 pb-lg-80 max-w-1920 mx-auto">
         <div class="container max-w-max p_0">
-            <h2 class="mb-0 px-22 pt-md-163 pt-80 fs-3xl fw-bold font-neueubold lh-119 text-center text-white">Core
+            <h2 class="mb-0 max-sm-px-22 pt-md-163 pt-80 fs-3xl fw-bold font-neueubold lh-119 text-center text-white">
+                Core
                 Strategies</h2>
-            <p class="mt-2 px-22 mb-0 fs-xs fw-normal text-center lh-160 c-gray max-w-730 mx-auto font-raleway">Our
+            <p
+                class="mt-2 max-sm-px-22 mb-0 fs-xs fw-normal text-center lh-160 color-gray max-w-730 mx-auto font-raleway">
+                Our
                 initial
                 strategies use powerful burgeoning trends like Real Yield, Rebase, and others to generate
                 cutting-edged
@@ -192,15 +195,17 @@
                                         class="inovation-label fw-normal font-raleway lh-160 text-white">Innovation</span>
                                     <img src="./assets/images/svg/a-inovation.svg" alt="inovation" class="my-md-2">
                                     <div class="d-flex align-items-center justify-content-between">
-                                        <p class="font-raleway fw-normal lh-155 c-gray-100">Projected Yield (APY)</p>
-                                        <p class="font-inter c-blue-100 lh-155 fw-bold">7,777,777%</p>
+                                        <p class="font-raleway fw-normal lh-155 color-gray-100">Projected Yield (APY)
+                                        </p>
+                                        <p class="font-inter color-blue-100 lh-155 fw-bold">7,777,777%</p>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between">
-                                        <p class="font-raleway fw-normal lh-155 c-gray-900 mb-0">Current Deposits</p>
+                                        <p class="font-raleway fw-normal lh-155 color-gray-900 mb-0">Current Deposits
+                                        </p>
                                         <p class="font-inter text-white lh-155 fw-medium mb-0">0.00 AMPL</p>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between line-total">
-                                        <p class="font-raleway fw-normal lh-155 c-gray-900 mb-0">Max Capacity</p>
+                                        <p class="font-raleway fw-normal lh-155 color-gray-900 mb-0">Max Capacity</p>
                                         <p class="font-inter text-white lh-155 fw-medium mb-0">0.00 AMPL</p>
                                     </div>
                                 </div>
@@ -208,7 +213,7 @@
                             </div>
                         </div>
                         <div class="col-lg-6 mt-5 my-lg-auto">
-                            <div class="px-22">
+                            <div class="max-sm-px-22">
                                 <h2
                                     class='mb-0 font-neueregular fs-2xl fw-normal lh-119 text-capitalize max-w-479 text-white pb-3'>
                                     Elastic Vault</h2>
@@ -221,15 +226,16 @@
                                         </svg>
                                     </span>
                                 </p>
-                                <p class='mb-0 font-raleway fw-normal lh-160 c-gray pt-2'>$AMPL</p>
+                                <p class='mb-0 font-raleway fw-normal lh-160 color-gray pt-2'>$AMPL</p>
                                 <p class='mb-0 font-raleway fs-lg fw-medium lh-160 text-white pt-2 pb-2'>Flagship
                                     Hedging
                                     Strategy</p>
-                                <p class='mb-0 font-raleway fw-normal lh-160 c-gray max-w-lg-422 pb-2'>This
+                                <p class='mb-0 font-raleway fw-normal lh-160 color-gray max-w-lg-422 pb-2'>This
                                     one-of-a-kind strategy
                                     combines the benefits of Rebase’s force multiplier effect and Real Yield’s
                                     sustainability.</p>
-                                <p class='mb-0 font-raleway fw-normal lh-160 c-gray max-w-lg-422 pb-2'>Helps users to
+                                <p class='mb-0 font-raleway fw-normal lh-160 color-gray max-w-lg-422 pb-2'>Helps users
+                                    to
                                     protect against
                                     downtrends and amplify yield rewards during market up trends.</p>
                             </div>
@@ -245,15 +251,17 @@
                                         class="inovation-label fw-normal font-raleway lh-160 text-white">Innovation</span>
                                     <img src="./assets/images/svg/pi-inovation.svg" alt="inovation" class="my-md-2">
                                     <div class="d-flex align-items-center justify-content-between">
-                                        <p class="font-raleway fw-normal lh-155 c-gray-100">Projected Yield (APY)</p>
-                                        <p class="font-inter c-blue-100 lh-155 fw-bold">7,777,777%</p>
+                                        <p class="font-raleway fw-normal lh-155 color-gray-100">Projected Yield (APY)
+                                        </p>
+                                        <p class="font-inter color-blue-100 lh-155 fw-bold">7,777,777%</p>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between">
-                                        <p class="font-raleway fw-normal lh-155 c-gray-900 mb-0">Current Deposits</p>
+                                        <p class="font-raleway fw-normal lh-155 color-gray-900 mb-0">Current Deposits
+                                        </p>
                                         <p class="font-inter text-white lh-155 fw-medium mb-0">0.00 AMPL</p>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between line-total">
-                                        <p class="font-raleway fw-normal lh-155 c-gray-900 mb-0">Max Capacity</p>
+                                        <p class="font-raleway fw-normal lh-155 color-gray-900 mb-0">Max Capacity</p>
                                         <p class="font-inter text-white lh-155 fw-medium mb-0">0.00 AMPL</p>
                                     </div>
                                 </div>
@@ -261,23 +269,24 @@
                             </div>
                         </div>
                         <div class="col-lg-6 mt-5 my-lg-auto">
-                            <div class="px-22">
+                            <div class="max-sm-px-22">
                                 <h2
                                     class='mb-0 font-neueregular fs-2xl fw-normal lh-119 max-w-479 text-capitalize text-white pb-3'>
                                     Olympus Bond Rewards Vault</h2>
                                 <ul class="list-unstyled">
-                                    <li class='mb-0 font-raleway fw-normal lh-160 c-gray max-w-lg-422 pb-2'> 1. <span
-                                            class="fw-semibold text-white">Yield Received</span> $OHM</li>
+                                    <li class='mb-0 font-raleway fw-normal lh-160 color-gray max-w-lg-422 pb-2'> 1.
+                                        <span class="fw-semibold text-white">Yield Received</span> $OHM
+                                    </li>
 
                                     <li
-                                        class='mb-0 font-raleway fw-normal lh-160 c-gray max-w-lg-422 pb-2 d-flex align-items-sm-start gap-1'>
+                                        class='mb-0 font-raleway fw-normal lh-160 color-gray max-w-lg-422 pb-2 d-flex align-items-sm-start gap-1'>
                                         <span>
                                             3.</span>These vault strategies will enable users to participate in
                                         Olympus’ bond markets on Bond Protocol and automatically earn
                                         $OHM rewards in addition to other tokens.
                                     </li>
                                     <li
-                                        class='mb-0 font-raleway fw-normal lh-160 c-gray max-w-lg-422 pb-2 d-flex align-items-sm-start gap-1'>
+                                        class='mb-0 font-raleway fw-normal lh-160 color-gray max-w-lg-422 pb-2 d-flex align-items-sm-start gap-1'>
                                         <span>
                                             3.</span> Bond Protocol markets for other token bonds will be enabled
                                         over time.
@@ -297,15 +306,17 @@
                                         class="inovation-label fw-normal font-raleway lh-160 text-white">Innovation</span>
                                     <img src="./assets/images/svg/pi-inovation.svg" alt="inovation" class="my-md-2">
                                     <div class="d-flex align-items-center justify-content-between">
-                                        <p class="font-raleway fw-normal lh-155 c-gray-100">Projected Yield (APY)</p>
-                                        <p class="font-inter c-blue-100 lh-155 fw-bold">7,777,777%</p>
+                                        <p class="font-raleway fw-normal lh-155 color-gray-100">Projected Yield (APY)
+                                        </p>
+                                        <p class="font-inter color-blue-100 lh-155 fw-bold">7,777,777%</p>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between">
-                                        <p class="font-raleway fw-normal lh-155 c-gray-900 mb-0">Current Deposits</p>
+                                        <p class="font-raleway fw-normal lh-155 color-gray-900 mb-0">Current Deposits
+                                        </p>
                                         <p class="font-inter text-white lh-155 fw-medium mb-0">0.00 AMPL</p>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between line-total">
-                                        <p class="font-raleway fw-normal lh-155 c-gray-900 mb-0">Max Capacity</p>
+                                        <p class="font-raleway fw-normal lh-155 color-gray-900 mb-0">Max Capacity</p>
                                         <p class="font-inter text-white lh-155 fw-medium mb-0">0.00 AMPL</p>
                                     </div>
                                 </div>
@@ -313,18 +324,20 @@
                             </div>
                         </div>
                         <div class="col-lg-6 mt-5 my-lg-auto">
-                            <div class="px-22">
+                            <div class="max-sm-px-22">
                                 <h2
                                     class='mb-0 font-neueregular fs-2xl fw-normal lh-119 max-w-479 text-capitalize text-white pb-3'>
                                     Olympus Bond Rewards Vault</h2>
                                 <ul class="list-unstyled">
-                                    <li class='mb-0 font-raleway fw-normal lh-160 c-gray max-w-lg-422 pb-2'> 1. <span
-                                            class="fw-semibold text-white">Deposit
-                                            Token:</span> $OHM</li>
-                                    <li class='mb-0 font-raleway fw-normal lh-160 c-gray max-w-lg-422 pb-2'> 2. <span
-                                            class="fw-semibold text-white">Yield Received:</span> $OHM, $DAI</li>
+                                    <li class='mb-0 font-raleway fw-normal lh-160 color-gray max-w-lg-422 pb-2'> 1.
+                                        <span class="fw-semibold text-white">Deposit
+                                            Token:</span> $OHM
+                                    </li>
+                                    <li class='mb-0 font-raleway fw-normal lh-160 color-gray max-w-lg-422 pb-2'> 2.
+                                        <span class="fw-semibold text-white">Yield Received:</span> $OHM, $DAI
+                                    </li>
                                     <li
-                                        class='mb-0 font-raleway fw-normal lh-160 c-gray max-w-lg-422 pb-2 d-flex align-items-sm-start gap-1'>
+                                        class='mb-0 font-raleway fw-normal lh-160 color-gray max-w-lg-422 pb-2 d-flex align-items-sm-start gap-1'>
                                         <span>
                                             3.</span> This
                                         strategy gives depositors a chance to participate in Olympus’s growing Real
@@ -357,27 +370,24 @@
                         token of the protocol that is minted and distributed in a decentralized fashion. It produces
                         amplified
                         yield during uptrends and protects from downside action during downtrends.</p>
-                    <button class='btn-view mb-5 font-raleway fw-medium text-white'>View
+                    <button class='btn_view mb-5 font-raleway fw-medium text-white'>View
                         Contract
                         Address</button>
                     <p class='mb-0 font-neueubold fs-xl fw-bold text-black text-capitalize lh-119 pb-3'>IBO TOKENOMICS
                     </p>
                     <p class='mb-0 font-raleway fs-md fw-bold text-black lh-130 pb-2'>IBO Round 1 Price</p>
-                    <p class='mb-0 font-raleway fw-semibold c-blue-300 lh-130 pb-3'>1 EEFI = $12</p>
+                    <p class='mb-0 font-raleway fw-semibold color-blue-300 lh-130 pb-3'>1 EEFI = $12</p>
                     <p class='mb-0 font-raleway fs-md fw-bold text-black lh-130 pb-2'>IBO Round 2 Price</p>
-                    <p class='mb-0 font-raleway fw-semibold c-blue-300 lh-130 pb-3'>1 EEFI = $18</p>
+                    <p class='mb-0 font-raleway fw-semibold color-blue-300 lh-130 pb-3'>1 EEFI = $18</p>
                     <p class='mb-0 font-raleway fs-md fw-bold text-black lh-130 pb-2'>IBO Round 3 Price</p>
-                    <p class='mb-0 font-raleway fw-semibold c-blue-300 lh-130 pb-3'>1 EEFI = $26</p>
+                    <p class='mb-0 font-raleway fw-semibold color-blue-300 lh-130 pb-3'>1 EEFI = $26</p>
                     <p class='mb-0 font-raleway fs-md fw-bold text-black lh-130 pb-2'>TOTAL SUPPLY</p>
                     <p class='mb-0 font-raleway fw-semibold text-black lh-130'>170,000</p>
                 </div>
                 <div class='pt-lg-0 col-lg-6 pt-100'>
                     <div class="max-w-lg-511 max-w-515 mx-lg-auto">
                         <div class='d-flex align-items-md-center align-items-start gap-20 pb-4'>
-                            <div class='cur_pointer icon_hov'>
-                                <span><img class="custom-icon-token" src="./assets/images/svg/yield.svg"
-                                        alt="yield"></span>
-                            </div>
+                            <span><img class="custom-icon-token" src="./assets/images/svg/yield.svg" alt="yield"></span>
                             <div>
                                 <p
                                     class='font-neueubold fs-xl fw-bold text-white lh-119 text-capitalize mb-1 mb-sm-2 mb-lg-3'>
