@@ -488,7 +488,7 @@
     margin-bottom: -2px;
 }
 
-.max-w-511 {
+.max-w-515 {
     max-width: 511px;
 }
 
@@ -756,6 +756,10 @@
 
     .card-slider-core {
         box-shadow: 0px 4px 41px 0px var(--c-blue-50);
+    }
+
+    .max-w-lg-511 {
+        max-width: 511px;
     }
 
     .mt-lg-29 {
