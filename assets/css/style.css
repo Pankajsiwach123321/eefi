@@ -339,7 +339,6 @@
     margin-bottom: 25px;
 }
 
-
 .pt-80 {
     padding-top: 80px;
 }
@@ -403,10 +402,6 @@
     background: var(--c-blue-800);
 }
 
-.max-w-422 {
-    max-width: 422px;
-}
-
 .inovation-label {
     padding: 12px 11px;
     font-size: var(--fs-xs);
@@ -423,7 +418,6 @@
     background: var(--c-gray-300) !important;
     transition: all .3s linear !important;
 }
-
 
 .inovation .slick-dots li.slick-active button:before {
     width: 51px !important;
@@ -727,10 +721,6 @@
         padding-top: 132px;
     }
 
-    .max-md-w-448 {
-        max-width: 488px;
-    }
-
     .pt-md-163 {
         padding-top: 163px;
     }
@@ -770,6 +760,14 @@
 
     .mt-lg-29 {
         margin-top: 29px;
+    }
+
+    .max-w-lg-448 {
+        max-width: 488px;
+    }
+
+    .max-w-lg-422 {
+        max-width: 422px;
     }
 
     .bg-token {
